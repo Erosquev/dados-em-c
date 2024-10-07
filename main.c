@@ -83,6 +83,17 @@ int main() {
     fprintf(estatisticas, "Quantidade de numeros impares: %d\n", impares);
     fclose(estatisticas);
     
+    FILE *distintos_arquivo = fopen("distintos.txt", "w");
+    if (!distintos_arquivo) {
+        printf("Erro ao criar o arquivo distintos.txt\n");
+        return 1;
+    }
+    for (int i = 0; i < tamanho_diferentes; i++) {
+        fprintf(distintos_arquivo, "%d ", diferentes[i]);
+    }
+    fprintf(distintos_arquivo, "\n");
+    fclose(distintos_arquivo);
+    
 }
 
     
