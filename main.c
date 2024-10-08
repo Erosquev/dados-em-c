@@ -93,7 +93,8 @@ int main() {
     }
     fprintf(distintos_arquivo, "\n");
     fclose(distintos_arquivo);
-    
+
+  return 0;
 }
 
     
