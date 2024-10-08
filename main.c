@@ -76,6 +76,15 @@ int main() {
         printf("Erro ao criar o arquivo estatisticas.txt\n");
         return 1;
     }
+
+    int e;
+    fscanf(estatisticas, "%d", &e);
+
+    if
+
+
+
+      
     fprintf(estatisticas, "Quantidade de numeros positivos: %d\n", positivos);
     fprintf(estatisticas, "Quantidade de numeros negativos: %d\n", negativos);
     fprintf(estatisticas, "Quantidade de numeros zero: %d\n", zeros);
